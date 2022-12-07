@@ -11,10 +11,17 @@
     <div class="mainmenu createmenu">
         <h1>Create URL</h1>
         <h2>Enter the URLs of your chosen images below:</h2>
-        <input class="create-url-inputs" type="url"/>
-        <div class="createmenu_buttons">
-            <button>Add</button><button disabled>Remove</button>
-        </div>
+        <form method="POST" action="/create">
+            <div class="create-url-inputs-div">
+                <input name="url_input" class="create-url-input" type="url" required/>
+                <input name="url_input" class="create-url-input" type="url" required/>
+            </div>
+            <div class="createmenu_buttons">
+                <button onclick="addInput()" class="createmenu_buttons_add">Add</button><button onclick="removeInput()" class="createmenu_buttons_remove" disabled>Remove</button>
+            </div>
+            <input type="submit" value="Generate"/>
+        </form>
     </div>
 </body>
 </html>
+<script src="/js/create/"></script>

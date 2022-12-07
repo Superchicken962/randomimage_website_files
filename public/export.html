@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export</title>
+    <link rel="stylesheet" href="/css/main/"/>
+</head>
+<body>
+    <img class="backgroundimg" src="/image/<%= encodedarray%>"/>
+    <div class="exportmenu">
+        <h1>Your URL</h1>
+        <textarea disabled><%= encodedarray%></textarea>
+        <a onclick="document.querySelector('.backgroundimg').remove()">remove background</a>
+    </div>
+</body>
+</html>
