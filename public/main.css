@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(140,140,140);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mainmenu {
+    position: absolute;
+    display: block;
+    margin: auto;
+    color: black;
+    width: 70vh;
+    height: 80vh;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+}
+.mainmenu h1 {
+    text-align: center;
+    font-size: 6vh;
+}
+.mainmenu a {
+    display: flex;
+    margin: auto;
+    width: 55vh;
+    height: 8vh;
+    background-color: rgb(90,90,90);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3.5vh;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1vh;
+}
+.mainmenu a:hover {
+    background-color: rgb(50,50,50);
+    cursor: pointer;
+}
+
+.createmenu h2 {
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.createmenu input[type=url] {
+    display: block;
+    margin: auto;
+    width: 55vh;
+    height: 2.5vh;
+    outline: none;
+    border: none;
+    font-size: 2vh;
+}
+
+.createmenu button {
+    display: inline-flex;
+    margin: auto;
+    height: 5vh;
+    width: 22.5vh;
+    background-color: rgb(90,90,90);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3.5vh;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    border: none;
+    outline: none;
+}
+.createmenu button:hover {
+    background-color: rgb(50,50,50);
+    cursor: pointer;
+}
+.createmenu button:disabled {
+    cursor: not-allowed;
+    background-color: rgba(90,90,90);
+    opacity: 0.6;
+}
+
+.createmenu_buttons {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
